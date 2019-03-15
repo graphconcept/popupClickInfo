@@ -1,0 +1,111 @@
+<style>
+.raty0{
+float:right;
+margin-right:0px;
+width:60%;
+height:auto;
+}
+.black_overlay {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+}
+.white_content {
+  display: none;
+border-radius:5px;
+    color: #6F7476;
+     position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: auto%;
+  padding: 16px;
+    background: rgba(252, 252, 252, 1);
+  z-index: 1002;
+  overflow: auto;   
+    clear: both;
+}
+.popup-button {
+    width: 75%;
+    margin-top: 20px;
+    max-width: 330px;
+    min-width: 130px;
+    height: 40px;
+    background-color: rgba(84, 187, 171, 1);
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 10px;
+    line-height: 15px;
+    color: #ffffff;
+    box-shadow: 0px 1px 1px rgba(102, 102, 102, 0.498039215686275);
+    font-family: 'Open Sans Bold', 'Open Sans Regular', 'Open Sans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+.popup-button:hover {
+    background-image: linear-gradient(#51c2b3, #51c2b3);
+}
+.popup-link{
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .white_content {
+    top:5%;
+left:5%;
+width:90%;
+height:90%;
+  }
+.raty0{
+width:100%;
+
+}
+}
+
+
+
+
+</style>
+ <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><div class="raty0"><img src="https://trend-home.pl/data/include/cms/PayU-zero.jpg" class="raty0" alt="Rozłóż cenę produktów na raty 0% z PayU Raty!"></div></a>
+
+  <div id="light" class="white_content">
+<p><img src="https://trend-home.pl/data/include/cms/raty_infografika.png"></p>
+<a class="popup-link" href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+<div class="popup-button close-action">
+                            
+                           
+                            
+<span>     Kontynuuj zakupy
+</span>
+                                </div></a>
+<div class="footer">
+                                    
+
+                                    <p>
+                                    <span>
+                                        Umowa o pożyczkę zawierana jest między pożyczkobiorcą a pożyczkodawcą tj. Alior Bank S.A. z
+                                        siedzibą w Warszawie lub mBank S.A. z siedzibą w Warszawie, lub Kreditech Polska Sp. z o.o. z siedzibą w Warszawie,
+                                        pod warunkiem pozytywnej oceny zdolności kredytowej pożyczkobiorcy. Pożyczkodawca uprawniony jest do zaproponowania
+                                        innego okresu kredytowania niż wnioskowany przez Klienta, jeśli wynika to z badania zdolności kredytowej Klienta. PayU S.A.
+                                        z siedzibą w Poznaniu współpracuje z pożyczkodawcami i pośredniczy w zawieraniu ww. umów.
+                                    </span>
+                                    </p>
+                                    <p>
+                                        <span>Niniejszy materiał nie stanowi oferty w rozumieniu kodeksu cywilnego i ma charakter wyłącznie informacyjny. </span>
+                                     
+                                    </p>
+                                </div>
+  </div>
+  <div id="fade" class="black_overlay"></div>
